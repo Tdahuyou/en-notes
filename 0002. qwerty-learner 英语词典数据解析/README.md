@@ -1,4 +1,4 @@
-# 0002. qwerty-learner 英语词典数据解析
+# [0002. qwerty-learner 英语词典数据解析](https://github.com/Tdahuyou/en-notes/tree/main/0002.%20qwerty-learner%20%E8%8B%B1%E8%AF%AD%E8%AF%8D%E5%85%B8%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90)
 
 - 📝 summary
   - 这是早期编写的脚本，主要作用是解析数据源中的词典数据。

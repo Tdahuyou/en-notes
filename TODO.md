@@ -1,4 +1,4 @@
 - qwerty-learner 英文单词
-  - [ ] 0003
-  - [ ] 0001
-  - [ ] 0002
+  - [ ] [0003. qwerty-learner 英文单词数据源](https://github.com/Tdahuyou/en-notes/tree/main/0003.%20qwerty-learner%20%E8%8B%B1%E6%96%87%E5%8D%95%E8%AF%8D%E6%95%B0%E6%8D%AE%E6%BA%90/README.md) <!-- [locale](./0003.%20qwerty-learner%20%E8%8B%B1%E6%96%87%E5%8D%95%E8%AF%8D%E6%95%B0%E6%8D%AE%E6%BA%90/README.md) -->
+  - [ ] [0001. en-words 仓库简述](https://github.com/Tdahuyou/en-notes/tree/main/0001.%20en-words%20%E4%BB%93%E5%BA%93%E7%AE%80%E8%BF%B0/README.md) <!-- [locale](./0001.%20en-words%20%E4%BB%93%E5%BA%93%E7%AE%80%E8%BF%B0/README.md) -->
+  - [ ] [0002. qwerty-learner 英语词典数据解析](https://github.com/Tdahuyou/en-notes/tree/main/0002.%20qwerty-learner%20%E8%8B%B1%E8%AF%AD%E8%AF%8D%E5%85%B8%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90/README.md) <!-- [locale](./0002.%20qwerty-learner%20%E8%8B%B1%E8%AF%AD%E8%AF%8D%E5%85%B8%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90/README.md) -->
