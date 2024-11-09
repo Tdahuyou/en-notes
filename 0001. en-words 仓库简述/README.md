@@ -1,9 +1,8 @@
 # [0001. en-words 仓库简述](https://github.com/Tdahuyou/en-notes/tree/main/0001.%20en-words%20%E4%BB%93%E5%BA%93%E7%AE%80%E8%BF%B0)
 
-- 📝 summary
-  - en-words 仓库中存放了【qwerty-learner 英文单词数据源】解析后的所有单词数据。
-  - 介绍了 en-words 中数据的来源。
-  - 完整的【qwerty-learner 英文单词数据源】在 0003 中，将 0003 中的 sources 数据搬运到和脚本同级的 sources 目录中，然后再执行解析脚本。
+- en-words 仓库中存放了【qwerty-learner 英文单词数据源】解析后的所有单词数据。
+- 这篇笔记介绍的是 en-words 中原始单词数据的来源。
+- 完整的【qwerty-learner 英文单词数据源】在 0003 中，将 0003 中的 sources 数据搬运到和脚本同级的 sources 目录中，然后再执行解析脚本。
 
 ## 🔗 links
 
@@ -14,7 +13,7 @@
 
 - en-words 目录下存放了解析后的所有单词数据。
 - 单词按照统一的格式存储在一个个 .md 文件中，可以进行二次编辑，也可以扩展其它词汇，注意格式保持统一即可。
-- 单词数据格式如下（以 wire 单词为例）：
+- 单词数据格式如下（以 abandon 单词为例）：
   - 首先是单词的名称
   - 紧接着是单词的
     - 发言
@@ -25,66 +24,49 @@
     - 例句
 
 ```md
-- wire
+- abandon
   - 发音
-    - 英 `/waɪə/`
-    - 美 `/'waɪɚ/`
+    - 英
+      - `/ə'bændən/`
+    - 美
+      - `/ə'bændən/`
   - 词义
-    - n. 金属丝,电线
-    - `thin metal in the form of a thread, or a piece of this`
-    - v. 安装电线,发电报
-    - `to send money electronically`
+    - vt.
+      - 离弃，丢弃；遗弃，抛弃；完全放弃
+        - `to leave someone, especially someone you are responsible for`
+    - n.
+      - 放任，放纵
+        - `if someone does something with abandon, they behave in a careless or uncontrolled way, without thinking or caring about what they are doing`
+  - 记忆
+    - a + band(乐队) + on → 一个乐队在演出 → 放纵
   - 同根词
     - adj.
-      - `wired` 接有电线的；以铁丝围起的；极其兴奋的
-      - `wireless` 无线的；无线电的
-      - `wiry` 金属线制的；金属丝般的；坚硬的；瘦长结实的；（噪音）尖细的
-    - adv.
-      - `wirily` 铁丝状地
+      - `abandoned`
+        - 被抛弃的；无约束的；恣意放荡的；寡廉鲜耻的
     - n.
-      - `wireless` 无线电
-      - `wiring` [电] 接线，架线；线路；金属线缝术
-      - `wirer` 打电报者；用金属线缠结的工人；以铁丝网捕猎鸟兽者
-      - `wiriness` 铁丝一样的形状
+      - `abandonment`
+        - 抛弃；放纵
     - v.
-      - `wired` 以金属丝装；打电报给（wire的过去分词）
-      - `wiring` 装电线（wire的现在分词）
-    - vi.
-      - `wireless` 打无线电报；打无线电话
-    - vt.
-      - `wireless` 用无线电报与…联系；用无线电报发送
+      - `abandoned`
+        - 抛弃（abandon的过去式和过去分词）
   - 近义词
-    - n. [电]电线；金属丝；电报
-      - `electric cord`
-      - `electrical wiring`
-    - vi. 打电报
-      - `telegraph`
+    - n.
+      - 狂热；放任
+        - `loose`
+        - `mania`
+    - vt.
+      - 遗弃；放弃
+        - `desert`
+        - `yield`
+        - `quit`
   - 短语
-    - `steel wire` 钢丝
-    - `wire rope` 钢丝索；钢缆， 钢索
-    - `wire netting` 铁丝网；金属网
-    - `wire rod` 线材；盘条；盘圆；钢丝筋条
-    - `by wire` 用电报
-    - `wire mesh` 金属丝网；铁丝网
-    - `hot wire` n. [美俚]好消息；（不用钥匙起动点火装置的）短路点火；带电电线
-    - `wire drawing` 拔丝；抽丝现象
-    - `copper wire` 铜线
-    - `stainless steel wire` 不锈钢丝
-    - `electric wire` n. 电线
-    - `wire in` [旧]努力工作；给…接上电源线
-    - `wire cutting` 电火花线切割；钢丝切坯
-    - `steel wire rope` 钢丝绳；钢丝索；钢缆
-    - `welding wire` 焊丝；焊条
-    - `barbed wire` 有刺铁丝网；棘铁丝
-    - `iron wire` 铁丝；低碳钢丝
-    - `live wire` 生龙活虎的人；通电的电线
-    - `enameled wire` [瓷]漆包线；漆包铜线
-    - `welded wire mesh` 电焊网；焊接钢丝网
+    - `with abandon`
+      - 恣意地，放纵地
+    - `abandon ship`
+      - 弃船
   - 例句
-    - `copper wire`
-      - 铜丝
-    - `a wire fence`
-      - 铁丝网
+    - `How could she abandon her own child?`
+      - 她怎么能抛弃自己的孩子呢？
 ```
 
 - 单词的格式是参照数据源中的结构来定义的。
@@ -181,8 +163,10 @@ function writeFile(file_path) {
 /* -- 发音部分 -- */
 function parsePhone(word) {
   return `${SPACE_2}- ${SUB_TITLE.phone}
-${SPACE_2}${SPACE_2}- ${SUB_TITLE.ukphone} \`/${word.ukphone}/\`
-${SPACE_2}${SPACE_2}- ${SUB_TITLE.usphone} \`/${word.usphone}/\`
+${SPACE_2}${SPACE_2}- ${SUB_TITLE.ukphone}
+${SPACE_2}${SPACE_2}${SPACE_2}- \`/${word.ukphone}/\`
+${SPACE_2}${SPACE_2}- ${SUB_TITLE.usphone}
+${SPACE_2}${SPACE_2}${SPACE_2}- \`/${word.usphone}/\`
 `
 }
 
@@ -195,8 +179,9 @@ function parseTrans(word) {
     const trans = word.trans
     for (let i = 0; i < trans.length; i++) {
       const t = trans[i]
-      if (t.pos && t.tranCn) text += `${SPACE_2}${SPACE_2}- ${t.pos}. ${t.tranCn.replace(/\s/g, '')}\n`
-      if (t.tranOther) text += `${SPACE_2}${SPACE_2}- \`${t.tranOther}\`\n`
+      if (t.pos && t.tranCn) text += `${SPACE_2}${SPACE_2}- ${t.pos}.
+${SPACE_2}${SPACE_2}${SPACE_2}- ${t.tranCn.replace(/\s/g, '')}\n`
+      if (t.tranOther) text += `${SPACE_2}${SPACE_2}${SPACE_2}${SPACE_2}- \`${t.tranOther}\`\n`
     }
   }
 
@@ -220,7 +205,8 @@ function parseRelWord(word) {
     for (let i = 0; i < rels.length; i++) {
       const r = rels[i];
       text += `${SPACE_2}${SPACE_2}- ${r.pos}.\n`
-      text += r.words.map(w => `${SPACE_2}${SPACE_2}${SPACE_2}- \`${w.hwd}\` ${w.tran.trim()}`).join('\n') + '\n'
+      text += r.words.map(w => `${SPACE_2}${SPACE_2}${SPACE_2}- \`${w.hwd}\`
+${SPACE_2}${SPACE_2}${SPACE_2}${SPACE_2}- ${w.tran.trim()}`).join('\n') + '\n'
     }
   }
 
@@ -236,8 +222,9 @@ function parseSyno(word) {
     const synos = word.syno.synos
     for (let i = 0; i < synos.length; i++) {
       const s = synos[i];
-      text += `${SPACE_2}${SPACE_2}- ${s.pos}. ${s.tran}\n`
-      text += s.hwds.map(h => `${SPACE_2}${SPACE_2}${SPACE_2}- \`${h.w}\``).join('\n') + '\n'
+      text += `${SPACE_2}${SPACE_2}- ${s.pos}.
+${SPACE_2}${SPACE_2}${SPACE_2}- ${s.tran}\n`
+      text += s.hwds.map(h => `${SPACE_2}${SPACE_2}${SPACE_2}${SPACE_2}- \`${h.w}\``).join('\n') + '\n'
     }
   }
 
@@ -253,7 +240,8 @@ function parsePhrase(word) {
     const phrase = word.phrase
     const phrases = phrase.phrases
     phrases.forEach(p => {
-      text += `${SPACE_2}${SPACE_2}- \`${p.pContent}\` ${p.pCn} \n`
+      text += `${SPACE_2}${SPACE_2}- \`${p.pContent}\`
+${SPACE_2}${SPACE_2}${SPACE_2}- ${p.pCn} \n`
     })
   }
 
@@ -269,91 +257,13 @@ function parseSentence(word) {
     const sentence = word.sentence
     const sentences = sentence.sentences
     sentences.forEach(s => {
-      text += `${SPACE_2}${SPACE_2}- \`${s.sContent}\`\n${SPACE_2}${SPACE_2}${SPACE_2}- ${s.sCn}` + '\n'
+      text += `${SPACE_2}${SPACE_2}- \`${s.sContent}\`
+${SPACE_2}${SPACE_2}${SPACE_2}- ${s.sCn}` + '\n'
     })
   }
 
   return text ? `${SPACE_2}- ${SUB_TITLE.sentence}
 ${text}
 ` : ''
-}
-
-/* 章节自测列表 */
-function generateChapterMD(all_words, result_folder_path) {
-  let checkString = '';
-  all_words.map((h, i) => {
-    const chapterNum = Math.floor(i / 20 + 1);
-    if (i % 20 === 0) return `\n# Chapter ${chapterNum.toString().padStart(3, '0')}\n\n` + `- [ ] ${h}\n`
-    else return `- [ ] ${h}\n`
-  }).forEach((w, i) => {
-    const chapterNum = Math.floor(i / 20 + 1);
-    checkString += w;
-    if (chapterNum % 10 === 0 && i === chapterNum * 20 - 1) {
-      fs.writeFileSync(path.join(result_folder_path, `./${(chapterNum - 9).toString().padStart(3, '0')}~${chapterNum.toString().padStart(3, '0')}.md`), checkString)
-      checkString = '';
-    }
-    if (i === all_words.length - 1) {
-      fs.writeFileSync(path.join(result_folder_path, `./${(Math.floor(chapterNum / 10) * 10 + 1).toString().padStart(3, '0')}~${chapterNum.toString().padStart(3, '0')}.md`), checkString)
-      checkString = '';
-    }
-  });
-}
-
-function clearResultFolder(result_folder_path) {
-  emptyDir(result_folder_path)
-  rmEmptyDir(result_folder_path)
-  fs.mkdirSync(result_folder_path)
-}
-
-/**
- * 删除所有的文件(将所有文件夹置空)
- * @param {*} filePath
- */
-function emptyDir(filePath) {
-  try {
-    const files = fs.readdirSync(filePath) // 读取该文件夹
-    files.forEach((file) => {
-      const nextFilePath = `${filePath}/${file}`
-      const states = fs.statSync(nextFilePath)
-      if (states.isDirectory()) {
-        emptyDir(nextFilePath)
-      } else {
-        fs.unlinkSync(nextFilePath)
-        // console.log(`删除文件 ${nextFilePath} 成功`)
-      }
-    })
-  } catch (error) {
-    // console.log(error)
-    return
-  }
-}
-
-/**
- * 删除所有的空文件夹
- * @param {*} filePath
- */
-function rmEmptyDir(filePath) {
-  try {
-    const files = fs.readdirSync(filePath)
-    if (files.length === 0) {
-      fs.rmdirSync(filePath)
-      // console.log(`删除空文件夹 ${filePath} 成功`)
-    } else {
-      let tempFiles = 0
-      files.forEach((file) => {
-        tempFiles++
-        const nextFilePath = `${filePath}/${file}`
-        rmEmptyDir(nextFilePath)
-      })
-      //删除母文件夹下的所有字空文件夹后，将母文件夹也删除
-      if (tempFiles === files.length) {
-        fs.rmdirSync(filePath)
-        // console.log(`删除空文件夹 ${filePath} 成功`)
-      }
-    }
-  } catch (error) {
-    // console.log(error)
-    return
-  }
 }
 ```

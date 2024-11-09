@@ -85,3 +85,6 @@ tmp/
 *.min.js
 *.min.css
 *.map
+
+# 忽略词典数据解析后生成的文件
+results
