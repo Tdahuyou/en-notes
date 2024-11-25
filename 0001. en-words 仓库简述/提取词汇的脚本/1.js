@@ -63,28 +63,25 @@ function writeFile(file_path) {
     const word = it.content.word.content
 
     let wordStr =
-        '- ' +
-        it.headWord.replace(/\//g, '\\') +
-        '\n' +
+        `- ${it.headWord}\n` +
         parsePhone(word) +
         parseTrans(word) +
         parseRemMethod(word) +
         parseRelWord(word) +
         parseSyno(word) +
         parsePhrase(word) +
-        parseSentence(word);
+        parseSentence(word) +
+        `${SPACE_2}- 补充`
 
-    fs.writeFileSync(path.join(resultsFolderPath, `./${it.headWord.replace(/\//g, '\\')}.md`), wordStr)
+    fs.writeFileSync(path.normalize(path.join(resultsFolderPath, `./${it.headWord.replace(/\//g, '-')}.md`)), wordStr)
   })
 }
 
 /* -- 发音部分 -- */
 function parsePhone(word) {
   return `${SPACE_2}- ${SUB_TITLE.phone}
-${SPACE_2}${SPACE_2}- ${SUB_TITLE.ukphone}
-${SPACE_2}${SPACE_2}${SPACE_2}- \`/${word.ukphone}/\`
-${SPACE_2}${SPACE_2}- ${SUB_TITLE.usphone}
-${SPACE_2}${SPACE_2}${SPACE_2}- \`/${word.usphone}/\`
+${SPACE_2}${SPACE_2}- ${SUB_TITLE.ukphone} /${word.ukphone}/
+${SPACE_2}${SPACE_2}- ${SUB_TITLE.usphone} /${word.usphone}/
 `
 }
 
@@ -97,9 +94,8 @@ function parseTrans(word) {
     const trans = word.trans
     for (let i = 0; i < trans.length; i++) {
       const t = trans[i]
-      if (t.pos && t.tranCn) text += `${SPACE_2}${SPACE_2}- ${t.pos}.
-${SPACE_2}${SPACE_2}${SPACE_2}- ${t.tranCn.replace(/\s/g, '')}\n`
-      if (t.tranOther) text += `${SPACE_2}${SPACE_2}${SPACE_2}${SPACE_2}- \`${t.tranOther}\`\n`
+      if (t.pos && t.tranCn) text += `${SPACE_2}${SPACE_2}- ${t.pos}. ${t.tranCn.replace(/\s/g, '')}\n`
+      if (t.tranOther) text += `${SPACE_2}${SPACE_2}${SPACE_2}- ${t.tranOther}\n`
     }
   }
 
@@ -122,9 +118,7 @@ function parseRelWord(word) {
     const rels = word.relWord.rels
     for (let i = 0; i < rels.length; i++) {
       const r = rels[i];
-      text += `${SPACE_2}${SPACE_2}- ${r.pos}.\n`
-      text += r.words.map(w => `${SPACE_2}${SPACE_2}${SPACE_2}- \`${w.hwd}\`
-${SPACE_2}${SPACE_2}${SPACE_2}${SPACE_2}- ${w.tran.trim()}`).join('\n') + '\n'
+      text += r.words.map(w => `${SPACE_2}${SPACE_2}- ${r.pos}. ${w.hwd} ${w.tran.trim()}`).join('\n') + '\n'
     }
   }
 
@@ -140,9 +134,8 @@ function parseSyno(word) {
     const synos = word.syno.synos
     for (let i = 0; i < synos.length; i++) {
       const s = synos[i];
-      text += `${SPACE_2}${SPACE_2}- ${s.pos}.
-${SPACE_2}${SPACE_2}${SPACE_2}- ${s.tran}\n`
-      text += s.hwds.map(h => `${SPACE_2}${SPACE_2}${SPACE_2}${SPACE_2}- \`${h.w}\``).join('\n') + '\n'
+      text += `${SPACE_2}${SPACE_2}- ${s.pos}. ${s.tran}\n`
+      text += s.hwds.map(h => `${SPACE_2}${SPACE_2}${SPACE_2}- ${h.w}`).join('\n') + '\n'
     }
   }
 
@@ -158,8 +151,7 @@ function parsePhrase(word) {
     const phrase = word.phrase
     const phrases = phrase.phrases
     phrases.forEach(p => {
-      text += `${SPACE_2}${SPACE_2}- \`${p.pContent}\`
-${SPACE_2}${SPACE_2}${SPACE_2}- ${p.pCn} \n`
+      text += `${SPACE_2}${SPACE_2}- ${p.pContent} ${p.pCn}\n`
     })
   }
 
@@ -175,12 +167,10 @@ function parseSentence(word) {
     const sentence = word.sentence
     const sentences = sentence.sentences
     sentences.forEach(s => {
-      text += `${SPACE_2}${SPACE_2}- \`${s.sContent}\`
-${SPACE_2}${SPACE_2}${SPACE_2}- ${s.sCn}` + '\n'
+      text += `${SPACE_2}${SPACE_2}- ${s.sContent} ${s.sCn}\n`
     })
   }
 
   return text ? `${SPACE_2}- ${SUB_TITLE.sentence}
-${text}
-` : ''
+${text}` : ''
 }
