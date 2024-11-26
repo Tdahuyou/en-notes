@@ -2,17 +2,17 @@
 
 <!-- region:toc -->
 <!-- endregion:toc -->
-## 📝 Summary
+## 1. 📝 Summary
 - en-words 仓库中存放了【qwerty-learner 英文单词数据源】解析后的所有单词数据。
 - 这篇笔记介绍的是 en-words 中原始单词数据的来源。
 - 完整的【qwerty-learner 英文单词数据源】在 0003 中，将 0003 中的 sources 数据搬运到和脚本同级的 sources 目录中，然后再执行解析脚本。
 
-## 🔗 links
+## 2. 🔗 links
 
 - https://github.com/kajweb/dict
   - sources 中的数据来源于这个仓库。
 
-## 📒 ntoes - en-words 目录说明
+## 3. 📒 ntoes - en-words 目录说明
 
 - en-words 目录下存放了解析后的所有单词数据。
 - 单词按照统一的格式存储在一个个 .md 文件中，可以进行二次编辑，也可以扩展其它词汇，注意格式保持统一即可。
@@ -60,17 +60,17 @@
 - 单词的格式是参照数据源中的结构来定义的。
 - 保持后续插入的新词汇格式的统一，这样后续编写统一的批处理脚本会比较方便，可以对所有词汇统一整理。
 
-## 🤔 问：为什么要新建一个 en-words 仓库？直接将生成的单词放在当前的 en-notes 仓库中不行吗？
+## 4. 🤔 问：为什么要新建一个 en-words 仓库？直接将生成的单词放在当前的 en-notes 仓库中不行吗？
 
 - en-notes.0001 中生成的单词数量很多（解析后默认有 2w 多个，后续学习过程中还会不断新增），体积有 150 多 MB，如果将单词放在 en-ntoes 中，由于单词数据和笔记数据混合在一起，会导致单词的查询成本变高。
 - 将和笔记和单词数据分离开，让 en-words 仓库中仅存放单词文件，这样可以减少单词的查询成本、减少单词的维护成本。单词直接丢到根目录下，同时还有助于 url 的构建和复用。
 
-## 💻 demo - 提取所有词汇的脚本
+## 5. 💻 demo - 提取所有词汇的脚本
 
 ```js
 /**
  * 1.js
- * 1.js 这个脚本是 24.10.26 时基于 en.0002 中的 demo/index4.js 编写的
+ * 1.js 这个脚本最初是 24.10.26 时基于 en-notes.0002 中的 demo/index4.js 编写的
  * 用于提取 sources 中的所有单词，将其汇总到 results 目录中。
  */
 const fs = require('fs')
@@ -126,35 +126,31 @@ function writeFile(file_path) {
   data.forEach((it, i) => {
 
     // if (i > 1000) return;
-    // if (i > 1000) return;
 
     if (/[\s-=?()0123456789]/.test(it.headWord)) return;
 
     const word = it.content.word.content
 
     let wordStr =
-        '- ' +
-        it.headWord.replace(/\//g, '\\') +
-        '\n' +
+        `- ${it.headWord}\n` +
         parsePhone(word) +
         parseTrans(word) +
         parseRemMethod(word) +
         parseRelWord(word) +
         parseSyno(word) +
         parsePhrase(word) +
-        parseSentence(word);
+        parseSentence(word) +
+        `${SPACE_2}- 补充`
 
-    fs.writeFileSync(path.join(resultsFolderPath, `./${it.headWord.replace(/\//g, '\\')}.md`), wordStr)
+    fs.writeFileSync(path.normalize(path.join(resultsFolderPath, `./${it.headWord.replace(/\//g, '-')}.md`)), wordStr)
   })
 }
 
 /* -- 发音部分 -- */
 function parsePhone(word) {
   return `${SPACE_2}- ${SUB_TITLE.phone}
-${SPACE_2}${SPACE_2}- ${SUB_TITLE.ukphone}
-${SPACE_2}${SPACE_2}${SPACE_2}- \`/${word.ukphone}/\`
-${SPACE_2}${SPACE_2}- ${SUB_TITLE.usphone}
-${SPACE_2}${SPACE_2}${SPACE_2}- \`/${word.usphone}/\`
+${SPACE_2}${SPACE_2}- ${SUB_TITLE.ukphone} /${word.ukphone}/
+${SPACE_2}${SPACE_2}- ${SUB_TITLE.usphone} /${word.usphone}/
 `
 }
 
@@ -167,9 +163,8 @@ function parseTrans(word) {
     const trans = word.trans
     for (let i = 0; i < trans.length; i++) {
       const t = trans[i]
-      if (t.pos && t.tranCn) text += `${SPACE_2}${SPACE_2}- ${t.pos}.
-${SPACE_2}${SPACE_2}${SPACE_2}- ${t.tranCn.replace(/\s/g, '')}\n`
-      if (t.tranOther) text += `${SPACE_2}${SPACE_2}${SPACE_2}${SPACE_2}- \`${t.tranOther}\`\n`
+      if (t.pos && t.tranCn) text += `${SPACE_2}${SPACE_2}- ${t.pos}. ${t.tranCn.replace(/\s/g, '')}\n`
+      if (t.tranOther) text += `${SPACE_2}${SPACE_2}${SPACE_2}- ${t.tranOther}\n`
     }
   }
 
@@ -192,9 +187,7 @@ function parseRelWord(word) {
     const rels = word.relWord.rels
     for (let i = 0; i < rels.length; i++) {
       const r = rels[i];
-      text += `${SPACE_2}${SPACE_2}- ${r.pos}.\n`
-      text += r.words.map(w => `${SPACE_2}${SPACE_2}${SPACE_2}- \`${w.hwd}\`
-${SPACE_2}${SPACE_2}${SPACE_2}${SPACE_2}- ${w.tran.trim()}`).join('\n') + '\n'
+      text += r.words.map(w => `${SPACE_2}${SPACE_2}- ${r.pos}. ${w.hwd} ${w.tran.trim()}`).join('\n') + '\n'
     }
   }
 
@@ -210,9 +203,8 @@ function parseSyno(word) {
     const synos = word.syno.synos
     for (let i = 0; i < synos.length; i++) {
       const s = synos[i];
-      text += `${SPACE_2}${SPACE_2}- ${s.pos}.
-${SPACE_2}${SPACE_2}${SPACE_2}- ${s.tran}\n`
-      text += s.hwds.map(h => `${SPACE_2}${SPACE_2}${SPACE_2}${SPACE_2}- \`${h.w}\``).join('\n') + '\n'
+      text += `${SPACE_2}${SPACE_2}- ${s.pos}. ${s.tran}\n`
+      text += s.hwds.map(h => `${SPACE_2}${SPACE_2}${SPACE_2}- ${h.w}`).join('\n') + '\n'
     }
   }
 
@@ -228,8 +220,7 @@ function parsePhrase(word) {
     const phrase = word.phrase
     const phrases = phrase.phrases
     phrases.forEach(p => {
-      text += `${SPACE_2}${SPACE_2}- \`${p.pContent}\`
-${SPACE_2}${SPACE_2}${SPACE_2}- ${p.pCn} \n`
+      text += `${SPACE_2}${SPACE_2}- ${p.pContent} ${p.pCn}\n`
     })
   }
 
@@ -245,13 +236,11 @@ function parseSentence(word) {
     const sentence = word.sentence
     const sentences = sentence.sentences
     sentences.forEach(s => {
-      text += `${SPACE_2}${SPACE_2}- \`${s.sContent}\`
-${SPACE_2}${SPACE_2}${SPACE_2}- ${s.sCn}` + '\n'
+      text += `${SPACE_2}${SPACE_2}- ${s.sContent} ${s.sCn}\n`
     })
   }
 
   return text ? `${SPACE_2}- ${SUB_TITLE.sentence}
-${text}
-` : ''
+${text}` : ''
 }
 ```

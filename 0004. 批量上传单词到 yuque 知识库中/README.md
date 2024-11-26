@@ -2,12 +2,12 @@
 
 <!-- region:toc -->
 <!-- endregion:toc -->
-## 📝 Summary
+## 1. 📝 Summary
 - 📝 summary
   - 该笔记中记录的脚本，解决的问题 —— 将单词数据批量上传到 yuque 知识库上。
   - 截止目前（2024 年 10 月 26 日）需要 yuque 超级会员，获取到 token 才能使用。
 
-## 📒 notes
+## 2. 📒 notes
 
 - 这里边的内容也是早期基于 en-notes.0002 来修改的，作用是将单词数据推送到 yuque 知识库中。yuque 官方有暴露一些文档的 API 访问权限，需要绑定自己的 token 即可访问相关接口。
 - 最终效果

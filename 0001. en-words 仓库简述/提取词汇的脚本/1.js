@@ -1,6 +1,6 @@
 /**
  * 1.js
- * 1.js 这个脚本是 24.10.26 时基于 en.0002 中的 demo/index4.js 编写的
+ * 1.js 这个脚本最初是 24.10.26 时基于 en-notes.0002 中的 demo/index4.js 编写的
  * 用于提取 sources 中的所有单词，将其汇总到 results 目录中。
  */
 const fs = require('fs')
@@ -55,7 +55,6 @@ function writeFile(file_path) {
 
   data.forEach((it, i) => {
 
-    // if (i > 1000) return;
     // if (i > 1000) return;
 
     if (/[\s-=?()0123456789]/.test(it.headWord)) return;

@@ -2,10 +2,10 @@
 
 <!-- region:toc -->
 <!-- endregion:toc -->
-## 📝 Summary
+## 1. 📝 Summary
 - 记录了【qwerty-learner 英文单词数据源】的完整 JSON 数据的获取方式。
 
-## 🔗 links
+## 2. 🔗 links
 
 - https://github.com/kajweb/dict
   - github dict
