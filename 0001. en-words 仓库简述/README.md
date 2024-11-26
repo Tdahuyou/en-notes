@@ -1,5 +1,8 @@
 # [0001. en-words 仓库简述](https://github.com/Tdahuyou/en-notes/tree/main/0001.%20en-words%20%E4%BB%93%E5%BA%93%E7%AE%80%E8%BF%B0)
 
+<!-- region:toc -->
+<!-- endregion:toc -->
+## 📝 Summary
 - en-words 仓库中存放了【qwerty-learner 英文单词数据源】解析后的所有单词数据。
 - 这篇笔记介绍的是 en-words 中原始单词数据的来源。
 - 完整的【qwerty-learner 英文单词数据源】在 0003 中，将 0003 中的 sources 数据搬运到和脚本同级的 sources 目录中，然后再执行解析脚本。

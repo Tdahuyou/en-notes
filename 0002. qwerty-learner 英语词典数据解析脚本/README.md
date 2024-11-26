@@ -1,26 +1,29 @@
 # [0002. qwerty-learner 英语词典数据解析脚本](https://github.com/Tdahuyou/en-notes/tree/main/0002.%20qwerty-learner%20%E8%8B%B1%E8%AF%AD%E8%AF%8D%E5%85%B8%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90%E8%84%9A%E6%9C%AC)
 
-- 📝 summary
-  - 这是早期编写的脚本，主要作用是解析数据源中的词典数据。
-  - 执行 index{1~5}.js 即可生成对应的一些解析后的数据，大致逻辑是读取【qwerty-learner 英文单词数据源】即位于 sources 目录中的数据，然后将解析后的数据输出到 results 目录中。
-  - 完整的【qwerty-learner 英文单词数据源】在 0003 中，将 0003 中的 sources 数据搬运到和脚本同级的 sources 目录中，然后再执行解析脚本。
+<!-- region:toc -->
+<!-- endregion:toc -->
+## 1. 📝 Summary
+
+- 这是早期编写的脚本，主要作用是解析数据源中的词典数据。
+- 执行 index{1~5}.js 即可生成对应的一些解析后的数据，大致逻辑是读取【qwerty-learner 英文单词数据源】即位于 sources 目录中的数据，然后将解析后的数据输出到 results 目录中。
+- 完整的【qwerty-learner 英文单词数据源】在 0003 中，将 0003 中的 sources 数据搬运到和脚本同级的 sources 目录中，然后再执行解析脚本。
 - ⏰ todos
   - 不同脚本之间有很多冗余的代码，后续如果有需求的话，可以找时间处理一下这些脚本。
 
-## 🔗 links
+## 2. 🔗 links
 
 - https://qwerty.kaiyi.cool/
   - qwerty learner 在线练习站点。
 
-## 📒 notes - qwerty-learner 脚本
+## 3. 📒 notes - qwerty-learner 脚本
 
 当前笔记中存放了 [qwerty-learner](https://qwerty.kaiyi.cool/) 中的英文词典数据解析脚本。
 
-### qwerty learner 词典目录
+### 3.1. qwerty learner 词典目录
 
 ![Alt text](image.png)
 
-### 脚本使用说明
+### 3.2. 脚本使用说明
 
 - `index1.js` 将单词按照单词本来整理，并生成自测列表。
 - `index2.js` 将单词按照单词本名称为目录，写入到对应的目录中
@@ -33,7 +36,7 @@
 
 > 直接使用 nodejs 执行脚本即可，目前（24.10.26）测试时还是可用的。
 
-### 词典目录
+### 3.3. 词典目录
 
 > 词典目录也就是 dict 目录下的内容，这是跑 index3.js 脚本获取到的数据。执行 index3.js 之后，结果会生成到 results 目录下边，然后将结果搬运到 dict 下面即可。
 
