@@ -1,6 +1,10 @@
 # [0006. 《老人与海》笔记](https://github.com/Tdahuyou/en-notes/tree/main/0006.%20%E3%80%8A%E8%80%81%E4%BA%BA%E4%B8%8E%E6%B5%B7%E3%80%8B%E7%AC%94%E8%AE%B0)
 
 <!-- region:toc -->
+- [1. 📝 Summary](#1--summary)
+- [2. 🔗 links](#2--links)
+- [3. 📒 notes - 《老人与海》原文 txt 版](#3--notes---老人与海原文-txt-版)
+- [4. 📒 notes - TTS 在线转换](#4--notes---tts-在线转换)
 <!-- endregion:toc -->
 ## 1. 📝 Summary
 - 记录了《老人与海》英文版原文。

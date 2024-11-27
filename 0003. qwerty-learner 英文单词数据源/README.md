@@ -1,6 +1,8 @@
 # [0003. qwerty-learner 英文单词数据源](https://github.com/Tdahuyou/en-notes/tree/main/0003.%20qwerty-learner%20%E8%8B%B1%E6%96%87%E5%8D%95%E8%AF%8D%E6%95%B0%E6%8D%AE%E6%BA%90)
 
 <!-- region:toc -->
+- [1. 📝 Summary](#1--summary)
+- [2. 🔗 links](#2--links)
 <!-- endregion:toc -->
 ## 1. 📝 Summary
 - 记录了【qwerty-learner 英文单词数据源】的完整 JSON 数据的获取方式。
