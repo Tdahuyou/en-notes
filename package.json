@@ -1,8 +1,15 @@
 {
-    "scripts": {
-        "merge": "      node ./node_modules/tnotes   --mergeREADME         --repoName=en-notes",
-        "update": "     node ./node_modules/tnotes   --updateREADME        --repoName=en-notes",
-        "distribute": " node ./node_modules/tnotes   --distributeREADME    --repoName=en-notes",
-        "sync": "       node ./node_modules/tnotes   --syncREADME          --repoName=en-notes"
-    }
+  "scripts": {
+    "merge": "      node ./node_modules/tnotes   --mergeREADME         --repoName=en-notes",
+    "update": "     node ./node_modules/tnotes   --updateREADME        --repoName=en-notes",
+    "distribute": " node ./node_modules/tnotes   --distributeREADME    --repoName=en-notes",
+    "sync": "       node ./node_modules/tnotes   --syncREADME          --repoName=en-notes"
+  },
+  "tnotesConfig": {
+    "ignoreDirs": [
+      "md-imgs",
+      ".git",
+      ".vscode"
+    ]
+  }
 }
