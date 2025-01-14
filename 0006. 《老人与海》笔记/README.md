@@ -29,6 +29,12 @@
 - **听力、口语练习**：你只需要提供你想要学习的英文文本数据，就可以使用这款免费的在线工具将其转为音频数据。
 - 下面是原文中的前 5 小段的文本，以及转换后的音频 [2024-10-27-013903_199477.mp3](./2024-10-27-013903_199477.mp3)，可以听一下转换后的音频了解一下转换的效果，个人感觉效果还是很不错的。
 
+::: info
+⏰ TODO
+2024-10-27-013903_199477.mp3
+类似 .mp3、.mp4 这样的资源文件，统统丢到 bilibili 上存储，笔记中存储 bvid 即可，否则 vitepress 构建的时候可能会报错。
+:::
+
 ```
 He was an old man who fished alone in a skiff in the Gulf Stream and he had gone eighty-four days now without taking a fish. In the first forty days a boy had been with him. But after forty days without a fish the boy's parents had told him that the old man was now definitely and finally salao, which is the worst form of unlucky, and the boy had gone at their orders in another boat which caught three good fish the first week. It made the boy sad to see the old man come in each day with his skiff empty and he always went down to help him carry either the coiled lines or the gaff and harpoon and the sail that was furled around the mast. The sail was patched with flour sacks and, furled, it looked like the flag of permanent defeat.
 
