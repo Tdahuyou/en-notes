@@ -10,7 +10,7 @@
 
 ## 1. 我的单词本
 
-- [ ] [0007. 单词本](https://github.com/Tdahuyou/en-notes/tree/main/0007.%20%E5%8D%95%E8%AF%8D%E6%9C%AC/README.md) <!-- [locale](./0007.%20%E5%8D%95%E8%AF%8D%E6%9C%AC/README.md) -->  
+- [x] [0007. 单词本](https://github.com/Tdahuyou/en-notes/tree/main/0007.%20%E5%8D%95%E8%AF%8D%E6%9C%AC/README.md) <!-- [locale](./0007.%20%E5%8D%95%E8%AF%8D%E6%9C%AC/README.md) -->  
   - [1. 001~100](https://github.com/Tdahuyou/en-notes/tree/main/0007.%20%E5%8D%95%E8%AF%8D%E6%9C%AC/README.md#1-001100)
   - [2. 101~200](https://github.com/Tdahuyou/en-notes/tree/main/0007.%20%E5%8D%95%E8%AF%8D%E6%9C%AC/README.md#2-101200)
   
