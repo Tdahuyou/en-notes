@@ -1,30 +1,37 @@
-# [0001. en-words 仓库简述](https://github.com/Tdahuyou/en-notes/tree/main/0001.%20en-words%20%E4%BB%93%E5%BA%93%E7%AE%80%E8%BF%B0)
+# [0001. en-words 仓库简介](https://github.com/Tdahuyou/en-notes/tree/main/0001.%20en-words%20%E4%BB%93%E5%BA%93%E7%AE%80%E4%BB%8B)
 
 <!-- region:toc -->
-- [1. 📝 Summary](#1--summary)
-- [2. 🔗 links](#2--links)
-- [3. 📒 ntoes - en-words 目录说明](#3--ntoes---en-words-目录说明)
-- [4. 🤔 问：为什么要新建一个 en-words 仓库？直接将生成的单词放在当前的 en-notes 仓库中不行吗？](#4--问为什么要新建一个-en-words-仓库直接将生成的单词放在当前的-en-notes-仓库中不行吗)
-- [5. 💻 demo - 提取所有词汇的脚本](#5--demo---提取所有词汇的脚本)
+- [1. 🔗 github 开源仓库 - 英语字典 - kajweb/dict](#1--github-开源仓库---英语字典---kajwebdict)
+- [2. 🔗 en-words - 个人的英语词汇仓库](#2--en-words---个人的英语词汇仓库)
+- [3. 📒 en-words 简介](#3--en-words-简介)
+- [4. 🤔 为什么要新建一个 en-words 仓库？直接将生成的单词放在当前的 en-notes 仓库中不行吗？](#4--为什么要新建一个-en-words-仓库直接将生成的单词放在当前的-en-notes-仓库中不行吗)
+- [5. 🤔 如何往 en-words 中新增词汇？](#5--如何往-en-words-中新增词汇)
+- [6. 💻 demos.1 - 提取所有词汇的脚本](#6--demos1---提取所有词汇的脚本)
 <!-- endregion:toc -->
-## 1. 📝 Summary
-- en-words 仓库中存放了【qwerty-learner 英文单词数据源】解析后的所有单词数据。
-- 这篇笔记介绍的是 en-words 中原始单词数据的来源。
-- 完整的【qwerty-learner 英文单词数据源】在 0003 中，将 0003 中的 sources 数据搬运到和脚本同级的 sources 目录中，然后再执行解析脚本。
 
-## 2. 🔗 links
+## 1. 🔗 github 开源仓库 - 英语字典 - kajweb/dict
 
 - https://github.com/kajweb/dict
-  - sources 中的数据来源于这个仓库。
+- sources 中的数据来源于这个仓库。
+  - 在 sources 中仅保存了两个 .json 文件，都是从 dict 仓库中解压出来获取到的文件。
+  - ![](assets/2025-02-05-20-38-01.png)
+- dict 中的词汇还有很多，可以一键 clone 下来，然后利用本节介绍到的脚本将这些词汇数据全部提取出来，再 push 到自己新建的专门用于存放词汇文件的仓库中统一管理。
+  - ![](assets/2025-02-05-20-37-20.png)
+- dict 也是 [qwerty-learner](https://qwerty.kaiyi.cool/) 英文单词数据的来源。
 
-## 3. 📒 ntoes - en-words 目录说明
+## 2. 🔗 en-words - 个人的英语词汇仓库
+
+- https://github.com/Tdahuyou/en-words
+  - ![](assets/2025-02-05-20-44-47.png)
+
+## 3. 📒 en-words 简介
 
 - en-words 目录下存放了解析后的所有单词数据。
 - 单词按照统一的格式存储在一个个 .md 文件中，可以进行二次编辑，也可以扩展其它词汇，注意格式保持统一即可。
 - 单词数据格式如下（以 abandon 单词为例）：
   - 首先是单词的名称
   - 紧接着是单词的
-    - 发言
+    - 发音
     - 词义
     - 同根词
     - 近义词
@@ -65,12 +72,17 @@
 - 单词的格式是参照数据源中的结构来定义的。
 - 保持后续插入的新词汇格式的统一，这样后续编写统一的批处理脚本会比较方便，可以对所有词汇统一整理。
 
-## 4. 🤔 问：为什么要新建一个 en-words 仓库？直接将生成的单词放在当前的 en-notes 仓库中不行吗？
+## 4. 🤔 为什么要新建一个 en-words 仓库？直接将生成的单词放在当前的 en-notes 仓库中不行吗？
 
 - en-notes.0001 中生成的单词数量很多（解析后默认有 2w 多个，后续学习过程中还会不断新增），体积有 150 多 MB，如果将单词放在 en-ntoes 中，由于单词数据和笔记数据混合在一起，会导致单词的查询成本变高。
-- 将和笔记和单词数据分离开，让 en-words 仓库中仅存放单词文件，这样可以减少单词的查询成本、减少单词的维护成本。单词直接丢到根目录下，同时还有助于 url 的构建和复用。
+- 将笔记和单词数据分离开，让 en-words 仓库中仅存放单词文件，这样可以减少单词的查询成本、减少单词的维护成本。单词直接丢到根目录下，同时还有助于 url 的构建和复用。
 
-## 5. 💻 demo - 提取所有词汇的脚本
+## 5. 🤔 如何往 en-words 中新增词汇？
+
+- 可以随便在 en-words 中找一些单词，丢给 AI 去学习，让它们按照同样的单词树结构返回结果。
+- 再将 AI 返回的结果在线插入到 github 仓库中。
+
+## 6. 💻 demos.1 - 提取所有词汇的脚本
 
 ```js
 /**
