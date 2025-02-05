@@ -26,7 +26,7 @@
 
 ## 3. qwerty-learner 英文单词
 
-::: error ⏰ 待整理
+::: danger ⏰ 待整理
 这部分的内容比较杂乱，还没整理，主要是早期做 qwerty-learner 分享视频的时候写的一些脚本啥的。
 
 计划后续去看看 qwerty-learner 的源码，按照自己的需求做一些修改，以便更好地适配 TNotes，到时候再录制分享视频。
