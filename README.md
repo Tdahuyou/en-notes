@@ -2,12 +2,20 @@
 
 <!-- region:toc -->
 - [en-notes](#en-notes)
-  - [1. 我的词库](#1-我的词库)
-  - [2. 记单词的流程](#2-记单词的流程)
-  - [3. qwerty-learner 英文单词](#3-qwerty-learner-英文单词)
+  - [1. 我的单词本](#1-我的单词本)
+  - [2. 我的词库](#2-我的词库)
+  - [3. 记单词的流程](#3-记单词的流程)
+  - [4. qwerty-learner 英文单词](#4-qwerty-learner-英文单词)
 <!-- endregion:toc -->
 
-## 1. 我的词库
+## 1. 我的单词本
+
+- [ ] [0007. 单词本](https://github.com/Tdahuyou/en-notes/tree/main/0007.%20%E5%8D%95%E8%AF%8D%E6%9C%AC/README.md) <!-- [locale](./0007.%20%E5%8D%95%E8%AF%8D%E6%9C%AC/README.md) -->  
+  - [1. 001~100](https://github.com/Tdahuyou/en-notes/tree/main/0007.%20%E5%8D%95%E8%AF%8D%E6%9C%AC/README.md#1-001100)
+  - [2. 101~200](https://github.com/Tdahuyou/en-notes/tree/main/0007.%20%E5%8D%95%E8%AF%8D%E6%9C%AC/README.md#2-101200)
+  
+
+## 2. 我的词库
 
 - [x] [0001. en-words 仓库简介](https://github.com/Tdahuyou/en-notes/tree/main/0001.%20en-words%20%E4%BB%93%E5%BA%93%E7%AE%80%E4%BB%8B/README.md) <!-- [locale](./0001.%20en-words%20%E4%BB%93%E5%BA%93%E7%AE%80%E4%BB%8B/README.md) -->  
   - [1. 🔗 github 开源仓库 - 英语字典 - kajweb/dict](https://github.com/Tdahuyou/en-notes/tree/main/0001.%20en-words%20%E4%BB%93%E5%BA%93%E7%AE%80%E4%BB%8B/README.md#1--github-开源仓库---英语字典---kajwebdict)
@@ -18,13 +26,13 @@
   - [6. 💻 demos.1 - 提取所有词汇的脚本](https://github.com/Tdahuyou/en-notes/tree/main/0001.%20en-words%20%E4%BB%93%E5%BA%93%E7%AE%80%E4%BB%8B/README.md#6--demos1---提取所有词汇的脚本)
   
 
-## 2. 记单词的流程
+## 3. 记单词的流程
 
 - [x] [0005. en-words 结合幕布一起使用](https://github.com/Tdahuyou/en-notes/tree/main/0005.%20en-words%20%E7%BB%93%E5%90%88%E5%B9%95%E5%B8%83%E4%B8%80%E8%B5%B7%E4%BD%BF%E7%94%A8/README.md) <!-- [locale](./0005.%20en-words%20%E7%BB%93%E5%90%88%E5%B9%95%E5%B8%83%E4%B8%80%E8%B5%B7%E4%BD%BF%E7%94%A8/README.md) -->  
   - [1. 📒 基本使用流程](https://github.com/Tdahuyou/en-notes/tree/main/0005.%20en-words%20%E7%BB%93%E5%90%88%E5%B9%95%E5%B8%83%E4%B8%80%E8%B5%B7%E4%BD%BF%E7%94%A8/README.md#1--基本使用流程)
   
 
-## 3. qwerty-learner 英文单词
+## 4. qwerty-learner 英文单词
 
 ::: danger ⏰ 待整理
 这部分的内容比较杂乱，还没整理，主要是早期做 qwerty-learner 分享视频的时候写的一些脚本啥的。
