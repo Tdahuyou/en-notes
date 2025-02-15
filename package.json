@@ -16,38 +16,35 @@
       },
       "0001": {
         "bilibili": [],
-        "done": true,
-        "ignore": false
+        "done": true
       },
       "0002": {
         "bilibili": [],
-        "done": false,
-        "ignore": false
+        "done": false
       },
       "0003": {
         "bilibili": [],
-        "done": false,
-        "ignore": false
+        "done": false
       },
       "0004": {
         "bilibili": [],
-        "done": false,
-        "ignore": false
+        "done": false
       },
       "0005": {
         "bilibili": [],
-        "done": true,
-        "ignore": false
+        "done": true
       },
       "0006": {
         "bilibili": [],
-        "done": false,
-        "ignore": false
+        "done": false
       },
       "0007": {
         "bilibili": [],
-        "done": true,
-        "ignore": false
+        "done": true
+      },
+      "0008": {
+        "bilibili": [],
+        "done": true
       },
       "assets": {
         "ignore": true
