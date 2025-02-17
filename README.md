@@ -22,8 +22,12 @@
 :::
 
 - [x] [0007. 单词本-1](https://github.com/Tdahuyou/en-notes/tree/main/0007.%20%E5%8D%95%E8%AF%8D%E6%9C%AC-1/README.md) <!-- [locale](./0007.%20%E5%8D%95%E8%AF%8D%E6%9C%AC-1/README.md) -->  
+  - [1. ⚙️ EnWordList](https://github.com/Tdahuyou/en-notes/tree/main/0007.%20%E5%8D%95%E8%AF%8D%E6%9C%AC-1/README.md#1-️-enwordlist)
+  
 
 - [x] [0008. 单词本-2](https://github.com/Tdahuyou/en-notes/tree/main/0008.%20%E5%8D%95%E8%AF%8D%E6%9C%AC-2/README.md) <!-- [locale](./0008.%20%E5%8D%95%E8%AF%8D%E6%9C%AC-2/README.md) -->  
+  - [1. ⚙️ EnWordList](https://github.com/Tdahuyou/en-notes/tree/main/0008.%20%E5%8D%95%E8%AF%8D%E6%9C%AC-2/README.md#1-️-enwordlist)
+  
 
 ## 2. 我的词库
 
