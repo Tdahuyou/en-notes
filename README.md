@@ -13,12 +13,12 @@
 ::: tip 目前的策略
 - 每个单词本存储 100 个词。
 - 使用自定义的 EnWordList.vue 组件，完成单词本中词汇列表的渲染。
-  - 按照字母升序排序
-  - 自动生成编号
-  - 实现 checkbox 功能，以便临时自测。
-    - 细节：将 checkout 状态存储在 local storage 中，以 pathname 和 word 拼接作为 key
-  - 全选功能。
-  - 全部重置功能。
+- 按照字母升序排序
+- 自动生成编号
+- 实现 checkbox 功能，以便临时自测。
+  - 实现 checkbox 缓存：将 checkout 状态存储在 local storage 中，以 pathname 和 word 拼接作为 key
+- 全选功能。
+- 全部重置功能。
 :::
 
 - [x] [0007. 单词本-1](https://github.com/Tdahuyou/en-notes/tree/main/0007.%20%E5%8D%95%E8%AF%8D%E6%9C%AC-1/README.md) <!-- [locale](./0007.%20%E5%8D%95%E8%AF%8D%E6%9C%AC-1/README.md) -->  
